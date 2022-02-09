@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+    <p>Operators</p>
+	<p>x = 5, y = 10, z;</p>
+	<p id="p1">x+y=</p>
+	<p id="p2">y-x=</p>
+	<p id="p3">x*y=</p>
+	<p id="p4">y/x=</p>
+	<p id="p5">x%2=</p>
+    <p>x = 5;</p>
+	<p id="p6">x++=</p>
+	<p id="p7">x=</p>
+	<p id="p8">++x=</p>
+	<p id="p9">x--=</p>
+	<p id="p10">x=</p>
+	<p id="p11">--x=</p>
+
+   
+	<p>var a = 5, b = 10, c = "5", x = a</p>
+	<p id="q1">a == c returns </p>
+	<p id="q2">a === c returns </p>
+	<p id="q3">a == x returns </p>
+	<p id="q4">a != b returns </p>
+	<p id="q5">a > b returns </p>
+	<p id="q6">a < b returns </p>
+	<p id="q7">a >= b returns </p>
+	<p id="q8">a <= b returns </p>
+    <p id="demo"></p>
+
+<script> 
+
+    // Operators 
+var a = 5, b = 10, c = "5", x = a;
+
+document.getElementById("q1").innerHTML += a == c;
+
+document.getElementById("q2").innerHTML += a === c;
+
+document.getElementById("q3").innerHTML += a == x;
+
+document.getElementById("q4").innerHTML += a != b;
+
+document.getElementById("q5").innerHTML += a > b;
+
+document.getElementById("q6").innerHTML += a < b;
+
+document.getElementById("q7").innerHTML += a >= b;
+
+document.getElementById("q8").innerHTML += a <= b;
+
+
+
+var x = 5;
+
+        document.getElementById("p6").innerHTML += x++; 
+        document.getElementById("p7").innerHTML += x;   
+        document.getElementById("p8").innerHTML += ++x; 
+        document.getElementById("p9").innerHTML += x--;
+        document.getElementById("p10").innerHTML += x; 
+        document.getElementById("p11").innerHTML += --x; 
+var x = 5, y = 10;
+		var z = x + y
+		document.getElementById("p1").innerHTML += z; 
+
+		z = y - x;
+		document.getElementById("p2").innerHTML += z; 
+
+		z = x * y;
+		document.getElementById("p3").innerHTML += z; 
+
+		z = y / x;
+		document.getElementById("p4").innerHTML += z; 
+
+		z = x % 2;
+		document.getElementById("p5").innerHTML += z;
+
+        // IF-Else statement
+var book = "maths";
+            if( book == "history" ) {
+               document.write("<b>History Book</b>"+"<br/>");
+            } else if( book == "maths" ) {
+               document.write("<b>Maths Book</b>"+"<br/>");
+            } else if( book == "economics" ) {
+               document.write("<b>Economics Book</b>"+"<br/>");
+            } else {
+               document.write("<b>Unknown Book</b>"+"<br/>");
+            }
+            
+    var age = 15;
+         
+            if( age > 18 ) {
+                document.write("<b>Qualifies for driving</b>");
+            } else {
+                document.write("<b>Does not qualify for driving</b>"+"<br/>");
+            }    
+    var i;
+    
+    for (i = 0; i < 10; i++) 
+    {
+        document.write("ForLoop"+"<br/>");
+    }
+
+        var i=11;  
+        while (i<=15)  
+        {  
+        document.write(i + "<br/>");  
+        i++;  
+        } 
+
+         for (let i = 1; i < 10; i += 2) {
+                if (i === 7) {
+                     break;
+                }
+             document.write('Total Numbers: ' + i +"<br/>");
+            } 
+
+
+         const arr = [ 1, 2, 3 ];
+
+            for (let i = 0; i <= arr.length-1; i++) {
+                document.write(arr[i]+"<br/>");
+            }
+
+
+    const capitals = {
+        a: "Apple",
+        b: "Ball",
+        c: "Cat"
+    };
+
+    for (let key in capitals) {
+         document.write(key + ": " + capitals[key]+"<br/>");
+    }
+
+
+    var myArray = [];
+
+
+        var i = 0;
+        while (i <= 4){
+            myArray.push(i);
+            i++;
+        }
+    document.write(myArray+"<br/>");
+
+    var newArray = [];
+        var i = 10;
+
+        do {
+            newArray.push(i);
+            i++;
+        } while(i <= 10);
+     document.write(newArray+"<br/>");   
+</script>  
+</body>
+</html>
