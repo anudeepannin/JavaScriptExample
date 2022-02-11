@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Array Destructuring
+        let introduction = ["Hello", "I" , "am", "some"];
+        let greeting = introduction[0];
+        let name = introduction[3];
+        let [greeting1, pronoun] = introduction;
+
+        document.write(greeting+"<br/>");
+        document.write(name+"<br/>");
+        document.write( pronoun+"<br/>")
+        //Skipping Items in an Array
+        let [wish,,,fname] = ["Hello", "I" , "am", "fan"];
+        document.write(wish+"<br/>");
+        document.write(fname+"<br/>");
+        //rest of array
+        let [greetings,...intro] = ["Hello", "I" , "am", "Somes"];
+
+        document.write(greetings+"<br/>");
+        document.write(intro+"<br/>");
+        // Functions
+        function getArray() {
+            return ["Hello", "I" , "am", "faraa"];
+        } 
+        let [greetingss,pronoun1] = getArray();
+
+        document.write(greetingss+"<br/>");
+        document.write(pronoun1+"<br/>");
+        
+
+    </script>
+</body>
+</html>

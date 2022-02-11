@@ -1,6 +1,14 @@
-
-//strings example
-const p = 'hello';
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const p = 'hello';
 const q = new String('hello');
 
 document.write(p+"<br/>"); 
@@ -22,7 +30,7 @@ const result4 = text1.split();
 document.write(result4+"<br/>"); 
 const result5= text1.slice(1, 3);
 document.write(result5+"<br/>"); 
-//
+//arrays 
 let mountains = ['Everest', 'Fuji', 'Nanga Parbat'];
 document.write(mountains[0]+"<br/>"); 
 document.write(mountains[1]+"<br/>");
@@ -39,35 +47,6 @@ document.write(lastElement+"<br/>");
 let index = mountains.indexOf('K2');
 document.write(index+"<br/>");
 document.write(Array.isArray(mountains)+"<br/>");
-// functions
-function sayhi() {  
-  document.write ("Hello Bhavna"+"<br/>");  
- }
- function Hello(fullname, age,gender) {  
-  document.write (fullname + "and " + age + "and " + "  gender is " + gender+"<br/>");  
- }  
-
-
- function combinestring(string1, string2) {  
-  var completeString;  
-  completeString = string1 + string2;  
-  return completeString;  
-   }
-  function secondFunction(){  
-  var result;  
-  result = combinestring('Java', 'Script');  
-  document.write (result+"<br/>" );  
-}
-var add = (function () {
-  var counter = 0;
-  return function () {counter += 1; return counter}
-  })();
-   
-  add();
-  document.write(add()+"<br/>");
-//Arrow Functions
-hello = () => {
-  document.getElementById("demo").innerHTML += this;
-  }
-  window.addEventListener("load", hello);
-  document.getElementById("btn").addEventListener("click", hello);
+    </script>
+</body>
+</html>

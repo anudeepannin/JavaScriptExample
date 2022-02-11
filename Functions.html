@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function sayHello() {
+           document.write("Hello there!"+"<br/>");
+        }
+        function Hello(fullname, age,gender) {  
+            document.write (fullname + "and " + age + "and " + "  gender is " + gender+"<br/>");  
+        } 
+        
+        function combinestring(string1, string2) {  
+        var completeString;  
+        completeString = string1 + string2;  
+        return completeString;  
+        }
+        function secondFunction(){  
+            var result;  
+            result = combinestring('Java', 'Script');  
+            document.write (result+"<br/>" );  
+        }
+        var add = (function () {
+        var counter = 0;
+        return function () {counter += 1; return counter}
+        })();
+        
+        add();
+        document.write(add()+"<br/>");
+     </script>
+
+<p>Click the following button to call the function</p>      
+<form>
+   <input type = "button" onclick = "sayHello()" value = "Say Hello">
+   <input type = "button" onclick = "Hello('fan', 23,'male')" value = "Hello"><br/>
+<input type = "button" onclick = "secondFunction()" value = "Call Function"><br/>  
+
+</form>  
+</body>
+</html>

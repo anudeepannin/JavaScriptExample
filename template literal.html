@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Without template literal
+        console.log('Some text that I want \n on two lines!');
+        
+        // With template literal
+        console.log(`Some text that I want
+        on two lines!`);
+
+       
+        let principal = 1000;
+        let noofyears = 1;
+        let rateofinterest = 7;
+
+        let SI = `Simple Interest is ${(principal *
+                    noofyears * rateofinterest)/100}`;
+        alert("Simple Interest is" + SI);
+      function TaggedLiteralEg(strings) {
+        document.write(strings);
+    }
+    
+    TaggedLiteralEg `Hello world`; 
+    var strings='test';
+    function TaggedLiteralEg(strings, value, value2) {
+        document.write(strings);
+        document.write("<br>"+value2+"    "+value);
+        
+    }
+        let text = 'newLine';
+        TaggedLiteralEg`test ${text} ${2+3}`; 
+        
+</script>        
+        
+</body>
+</html>

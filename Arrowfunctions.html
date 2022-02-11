@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //with out  arrow function
+        let add = function (x, y) {
+	                return x + y;
+                };
+            document.write(add(10, 20)+"<br/>");
+
+        //with  arrow function
+        let add1 = (x, y) => x + y;
+        document.write(add1(10, 20)+"<br/>");
+
+        let numbers = [4,2,6];
+        numbers.sort(function(a,b){ 
+            return b - a; 
+        });
+        document.write(numbers+"<br/>");
+        //with  arrow function
+        let number = [4,2,6];
+        number.sort((a,b) => b - a);
+        document.write(number+"<br/>"); 
+        let names = ['fans', 'ram', 'man'];
+        let lengths = names.map(name => name.length);
+        document.write(lengths+"<br/>");
+
+
+
+        hello = () => {
+        document.getElementById("demo").innerHTML += this;
+    }
+  window.addEventListener("load", hello);
+  document.getElementById("btn").addEventListener("click", hello);
+    </script>
+    <p id="demo"></p> 
+    <form>
+        <input type="button" id="btn" value="button"><br/>
+    </form>
+</body>
+</html>
