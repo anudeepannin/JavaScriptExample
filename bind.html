@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+
+const module = {
+  x: 42,
+  getX: function() {
+    return this.x;
+  }
+};
+
+const un = module.getX;
+document.write(un()+"<br/>"); 
+const GetX = un.bind(module);
+document.write(GetX());
+
+
+function LateBloomer() {
+  this.petalCount = Math.floor(Math.random() * 12) + 1;
+}
+
+LateBloomer.prototype.bloom = function() {
+  window.setTimeout(this.declare.bind(this), 1000);
+};
+
+LateBloomer.prototype.declare = function() {
+  document.write(`I am a beautiful flower with ${this.petalCount} petals!`);
+};
+
+const flower = new LateBloomer();
+flower.bloom();
+
+
+
+       </script>
+</body>
+</html>

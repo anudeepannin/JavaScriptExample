@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+<body>
+    <script>
+    class Person {
+        constructor(first, last) {
+            this.firstName = first;
+            this.lastName = last;
+        }
+
+        getFullName() {
+            return this.firstName + ' ' + this.lastName;
+        }
+    }
+    var p = new Person('hello', 'man');
+     p.firstName = 'Hai';
+     var fullName = p.getFullName();
+    document.write(p.lastName+"<br/>");
+     class employee extends Person {
+        constructor(first, last, role) {
+            super(first, last);
+            this.role = role;
+        }
+    }
+    var t = new employee('some', 'one', 'dev');
+     t.firstName = 'hello';
+    t.role = 'devlopment';
+     var fullName = t.getFullName();
+    document.write("employee detalis:"+t.firstName+"<br/>");
+    document.write(fullName);
+    </script>
+</body>
+</html>
