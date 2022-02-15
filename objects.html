@@ -17,7 +17,21 @@
     }
    document.write(1,obj1);
     obj1.prop3();
-    
+    function Car(model, color) {
+    this.model = model;
+    this.color = color;
+}
+
+var c1 = new Car('BMW', 'red');
+console.log(c1.model);
+function Student(name, age) {
+    this.name = name;
+    this.age = age;
+}
+var s1 = new Student('hello', 7);
+console.log(s1.name);
+var s2 = new Student('haii', 9);
+console.log(s2.name);
     
 </script>
 <body>
